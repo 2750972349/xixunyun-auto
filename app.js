@@ -31,7 +31,7 @@ function sign(token) {
     if (res && res.data) {
       console.log(res.data.code + ',' + res.data.message)
       wechatSend('习讯云签到提交', res.data.message)
-      // sendEmail('习讯云签到提交', res.data.message)
+      sendEmail('习讯云签到提交', res.data.message)
     }
   })
 }
